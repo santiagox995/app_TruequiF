@@ -117,3 +117,4 @@ Además de lo técnico, fortalecimos nuestras capacidades de trabajo en equipo, 
 
 
 ---
+##Profe recuerda que te adjuntamos por aparte la contraseña de la API porque alser privada, Github no la acepta, así mismo con el .json
