@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    tools:context=".EditarProductoActivity">
+
+    <!-- Contenido principal -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Título -->
+
+            <!-- Título producto -->
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Edita tu publicación"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etTitulo"
+                android:layout_width="372dp"
+                android:layout_height="61dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/rounded_border"
+                android:hint="Título del producto"
+                android:paddingStart="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView12" />
+
+            <!-- Descripción -->
+            <EditText
+                android:id="@+id/etDescripcion"
+                android:layout_width="372dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_border"
+                android:hint="Descripción"
+                android:minLines="3"
+                android:paddingStart="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etTitulo" />
+
+            <!-- Estado -->
+            <EditText
+                android:id="@+id/etEstado"
+                android:layout_width="372dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_border"
+                android:hint="Estado"
+                android:paddingStart="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etDescripcion" />
+
+            <!-- Categoría -->
+            <EditText
+                android:id="@+id/etCategoria"
+                android:layout_width="372dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_border"
+                android:hint="Categoría"
+                android:paddingStart="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etEstado" />
+
+            <!-- Sección imágenes -->
+            <LinearLayout
+                android:id="@+id/layoutImagenes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/etCategoria"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageView
+                    android:id="@+id/imgEditar1"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/foto_icono" />
+
+                <ImageView
+                    android:id="@+id/imgEditar2"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/foto_icono" />
+
+                <ImageView
+                    android:id="@+id/imgEditar3"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/foto_icono" />
+
+                <ImageView
+                    android:id="@+id/imgEditar4"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/foto_icono" />
+            </LinearLayout>
+
+            <!-- Botón Guardar -->
+            <Button
+                android:id="@+id/btnGuardarCambios"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Guardar cambios"
+                android:backgroundTint="@color/azulapp"
+                app:layout_constraintTop_toBottomOf="@id/layoutImagenes"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_media_previous"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <!-- Pantalla de carga superpuesta -->
+    <RelativeLayout
+        android:id="@+id/frameProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blanco"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/imagenvalen" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:text="@string/editando" />
+    </RelativeLayout>
+</FrameLayout>

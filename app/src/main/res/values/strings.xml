@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">truequi</string>
+    <string name="todo">todo\n</string>
+    <string name="no_lo_necesitas_alguien_si">no lo necesitas alguien si\n</string>
+    <string name="publicando">Publicando ....</string>
+    <string name="editando">Editando ...</string>
+    <string name="promedio_0_0">Promedio: 0.0</string>
+    <string name="nombreusuario">NombreUsuario</string>
+    <string name="perfil">Perfil</string>
+    <string name="men">Menú</string>
+</resources>

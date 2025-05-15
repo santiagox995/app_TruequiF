@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/casa1"
+        android:title="Inicio" />
+    <item
+        android:id="@+id/like"
+        android:icon="@mipmap/like"
+        android:title="Like" />
+    <item
+        android:id="@+id/añadir"
+        android:icon="@drawable/mas1"
+        android:title="Añadir" />
+    <item
+        android:id="@+id/buzon"
+        android:icon="@drawable/buzon1"
+        android:title="Buzón"
+        />
+    <item
+        android:id="@+id/nav_perfil"
+        android:icon="@drawable/perfil1"
+        android:title="Perfil" />
+
+</menu>

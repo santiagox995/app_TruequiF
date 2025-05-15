@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Estilo para el AlertDialog -->
+    <style name="CustomAlertDialog" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButton</item>
+    </style>
+
+    <style name="PositiveButton" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/blue</item> <!-- tu color personalizado -->
+    </style>
+
+    <style name="NegativeButton" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+</resources>
+

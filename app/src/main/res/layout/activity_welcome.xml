@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="20dp">
+
+    <!-- Imagen centrada arriba -->
+    <ImageView
+        android:id="@+id/logoImagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@mipmap/imagenvalen"/>
+
+    <!-- Botón de Iniciar Sesión -->
+    <Button
+        android:id="@+id/btnIniciarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImagen"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#4CDCD9"
+        android:text="Iniciar Sesión"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"/>
+
+    <!-- Botón de Registrarse -->
+    <Button
+        android:id="@+id/btnRegistrarse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnIniciarSesion"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#4CDCD9"
+        android:text="Registrarse"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"/>
+
+</RelativeLayout>
+
+
+
+
+
+

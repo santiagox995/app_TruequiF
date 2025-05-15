@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Califica al usuario"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="12dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:layout_gravity="center_horizontal"
+        android:isIndicator="false"
+        android:rating="0"
+        android:paddingBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnEnviarCalificacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar calificación"
+        android:backgroundTint="@color/cyan"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

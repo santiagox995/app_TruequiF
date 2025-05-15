@@ -1,0 +1,79 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Espacio superior -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <!-- Imagen encima del texto -->
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/robot2"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="Logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELECCIONA TUS PREFERENCIAS:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
+
+        <!-- Checkboxes -->
+        <CheckBox
+            android:id="@+id/check_ropa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ropa" />
+
+        <CheckBox
+            android:id="@+id/check_accesorios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accesorios" />
+
+        <CheckBox
+            android:id="@+id/check_muebles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Muebles" />
+
+        <CheckBox
+            android:id="@+id/check_calzado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calzado" />
+
+        <CheckBox
+            android:id="@+id/check_entretenimiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entretenimiento" />
+
+        <CheckBox
+            android:id="@+id/check_servicios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Servicios" />
+
+        <Button
+            android:id="@+id/btn_guardar_preferencias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar Preferencias"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#4CDCD9" />
+
+    </LinearLayout>
+</ScrollView>

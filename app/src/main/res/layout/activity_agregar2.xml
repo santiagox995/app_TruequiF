@@ -1,0 +1,276 @@
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@color/blanco"
+    android:layout_height="match_parent"
+    tools:context=".Agregar2Activity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="ExtraText">
+
+
+            <!-- Título general -->
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Información del producto"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Imágenes -->
+            <LinearLayout
+                android:id="@+id/imageContainer"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/textView4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/foto_icono" />
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/foto_icono" />
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/foto_icono" />
+
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/foto_icono" />
+            </LinearLayout>
+
+            <!-- Título del artículo -->
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:text="Título del artículo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageContainer" />
+
+            <EditText
+                android:id="@+id/etTitulo"
+                android:paddingStart="12dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="10dp"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_border"
+                android:hint="Ej: Silla de oficina"
+                app:layout_constraintTop_toBottomOf="@id/textView6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Descripción -->
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:text="Descripción"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etTitulo" />
+
+            <EditText
+                android:id="@+id/etDescripcion"
+                android:paddingStart="12dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="10dp"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/rounded_border"
+                android:hint="Ej: Está en buen estado..."
+                app:layout_constraintTop_toBottomOf="@id/textView7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Marca -->
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:text="Marca"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etDescripcion" />
+
+            <EditText
+                android:id="@+id/etmarca"
+                android:paddingStart="12dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="10dp"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/rounded_border"
+                android:hint="Ej: IKEA, Samsung..."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView11" />
+
+            <!-- Categoría -->
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:text="Categoría"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etmarca" />
+
+            <Spinner
+                android:id="@+id/spinnerCategoria"
+                android:paddingStart="12dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="10dp"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_border"
+                app:layout_constraintTop_toBottomOf="@id/textView9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Estado -->
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:text="Estado"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinnerCategoria" />
+
+            <Spinner
+                android:id="@+id/spinnerEstado"
+                android:paddingStart="12dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="10dp"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/rounded_border"
+                app:layout_constraintTop_toBottomOf="@id/textView10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <Button
+                android:id="@+id/btnPublicar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="32dp"
+                android:backgroundTint="@color/azulapp"
+                android:text="Publicar"
+                android:textColor="@android:color/white"
+                app:layout_constraintTop_toBottomOf="@id/spinnerEstado"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/frameProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blanco"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/imagenvalen"
+            tools:layout_editor_absoluteX="142dp"
+            tools:layout_editor_absoluteY="172dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            tools:layout_editor_absoluteX="169dp"
+            tools:layout_editor_absoluteY="277dp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/publicando"
+            tools:layout_editor_absoluteX="150dp"
+            tools:layout_editor_absoluteY="361dp" />
+
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
