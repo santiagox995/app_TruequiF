@@ -94,9 +94,14 @@ Este método permitió obtener retroalimentación temprana sobre el diseño y la
 
 ## 📌 Conclusiones
 
-Truequi App representó una experiencia integral en el desarrollo de soluciones móviles con impacto social. Alcanzamos un nivel funcional que valida su aplicabilidad en entornos reales y urbanos. Uno de los mayores logros fue la integración del chatbot con IA, que mejora la interacción del usuario y demuestra el potencial de combinar inteligencia artificial con desarrollo móvil.
 
-Además de lo técnico, fortalecimos nuestras capacidades de trabajo en equipo, organización y resolución de problemas reales, aspectos fundamentales en nuestra formación profesional.
+El desarrollo de Truequi App representó una experiencia integral de aplicación práctica de los conocimientos adquiridos en diseño y programación de aplicaciones móviles bajo el entorno Android, empleando Kotlin como lenguaje principal y Firebase como plataforma de servicios backend. La aplicación, orientada al intercambio de objetos como ropa y accesorios, alcanzó un nivel funcional que valida su potencial de uso real.
+ 
+Uno de los logros más destacados del proyecto fue la integración de un chatbot con capacidades de inteligencia artificial, basado en una red neuronal siamesa, el cual permite realizar búsquedas por palabras clave, optimizando la interacción y experiencia del usuario.
+ 
+Este proyecto no solo consolidó competencias técnicas en desarrollo móvil e inteligencia artificial, sino que también potenció el trabajo colaborativo y la resolución de problemas reales, fundamentales en la formación profesional.
+
+
 
 ---
 
